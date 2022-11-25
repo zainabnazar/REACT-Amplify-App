@@ -10,6 +10,14 @@
       "StackName": "amplify-reactamplify-dev-145149",
       "StackId": "arn:aws:cloudformation:eu-west-2:839952283524:stack/amplify-reactamplify-dev-145149/b1bdb270-6cd0-11ed-aa7f-06f36a216ec8",
       "AmplifyAppId": "du3m1ola7akft"
+    },
+    "categories": {
+      "function": {
+        "ReactAmplify1": {
+          "deploymentBucketName": "amplify-reactamplify-dev-145149-deployment",
+          "s3Key": "amplify-builds/ReactAmplify1-6d4c7741697938553937-build.zip"
+        }
+      }
     }
   }
 }

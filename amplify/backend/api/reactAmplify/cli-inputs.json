@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/items/{itemId}": {
+      "name": "/items/{itemId}",
+      "lambdaFunction": "reactamplifieded4dd766",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

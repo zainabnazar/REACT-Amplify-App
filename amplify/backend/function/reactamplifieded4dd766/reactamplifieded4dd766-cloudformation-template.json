@@ -1,6 +1,6 @@
 {
   "AWSTemplateFormatVersion": "2010-09-09",
-  "Description": "Lambda Function resource stack creation using Amplify CLI",
+  "Description": "{\"createdOn\":\"Mac\",\"createdBy\":\"Amplify\",\"createdWith\":\"10.5.1\",\"stackType\":\"function-Lambda\",\"metadata\":{}}",
   "Parameters": {
     "CloudWatchRule": {
       "Type": "String",
@@ -47,12 +47,12 @@
         "FunctionName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "ReactAmplify1",
+            "reactamplifieded4dd766",
             {
               "Fn::Join": [
                 "",
                 [
-                  "ReactAmplify1",
+                  "reactamplifieded4dd766",
                   "-",
                   {
                     "Ref": "env"
@@ -89,12 +89,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "reactamplifyLambdaRolef698ec06",
+            "reactamplifiedLambdaRole1805d4cf",
             {
               "Fn::Join": [
                 "",
                 [
-                  "reactamplifyLambdaRolef698ec06",
+                  "reactamplifiedLambdaRole1805d4cf",
                   "-",
                   {
                     "Ref": "env"

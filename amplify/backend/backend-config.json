@@ -1,19 +1,19 @@
 {
   "function": {
-    "ReactAmplify1": {
+    "reactamplifieded4dd766": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
   },
   "api": {
-    "ReactAmplify1": {
+    "reactAmplify": {
       "service": "API Gateway",
       "providerPlugin": "awscloudformation",
       "dependsOn": [
         {
           "category": "function",
-          "resourceName": "ReactAmplify1",
+          "resourceName": "reactamplifieded4dd766",
           "attributes": [
             "Name",
             "Arn"

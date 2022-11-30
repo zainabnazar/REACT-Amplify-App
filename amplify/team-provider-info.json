@@ -15,11 +15,17 @@
       "function": {
         "reactamplifieded4dd766": {
           "deploymentBucketName": "amplify-reactamplified-dev-120157-deployment",
-          "s3Key": "amplify-builds/reactamplifieded4dd766-2f524d4b446c64707a45-build.zip"
+          "s3Key": "amplify-builds/reactamplifieded4dd766-4a504f2f516749616938-build.zip"
         }
       },
       "api": {
         "reactAmplify": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d1tbkvv6dcjhg3",
+          "type": "manual"
+        }
       }
     }
   }

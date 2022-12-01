@@ -1,5 +1,6 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import App from './App';
+
 
 
 test('Should have the correct text', async () => {
@@ -16,6 +17,16 @@ test('We get 200 status when we make the GET call', async () => {
 
 test("Get 4XX status when we are not passing the item in the request", async () => {
   let response = await fetch("https://0tipw7uf5j.execute-api.eu-west-2.amazonaws.com/dev/items/");
-  console.log("!!!!!!!!!!!", response.status);
   expect(response.status).toBe(403);
+})
+
+
+test('displays Response on screen when click "Get Item from backend" button', async () => {
+
+  render(<App />);
+  const button = screen.getByText("Get Item from backend");
+  fireEvent.click(button);
+  await waitFor(() => {
+    expect(screen.getByText("Response")).toBeInTheDocument();
+  });
 })

@@ -31,7 +31,7 @@ const App = () => {
       <div>
         <input placeholder="Enter Item" type="text" value={input} onChange={(e) => setInput(e.target.value)} />
       </div>
-      <button onClick={() => getItem({ input })}> Get Item from backend</button>
+      <button onClick={() => getItem({ input })}>Get Item from backend</button>
       <h2 style={{ visibility: items.length > 0 ? 'visible' : 'hidden' }}>Response</h2>
       {
         items.map((thisItem, index) => {

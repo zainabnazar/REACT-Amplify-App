@@ -1,8 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+
+test('Should have the correct text', async () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const myApp = await screen.findByText('React App Using Amplify');
+  expect(myApp).toBeVisible();
 });

@@ -1,11 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import Amplify from 'aws-amplify'
-import React, { useEffect, useState } from 'react'
+import { Amplify, Auth } from 'aws-amplify'
+import React, { useEffect, useState } from 'react';
+import { AmplifySignOut, withAuthenticator } from "@aws-amplify/ui-react";
+import awsconfig from './aws-exports';
 
 //const myAPI = "https://0tipw7uf5j.execute-api.eu-west-2.amazonaws.com/dev";
 
-
+Amplify.configure(awsconfig);
+Auth.configure(awsconfig);
 const App = () => {
   const [input, setInput] = useState("");
   const [items, setItems] = useState([]);
@@ -27,6 +30,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <AmplifySignOut />
       <h1>React App Using Amplify</h1>
       <div>
         <input placeholder="Enter Item" type="text" value={input} onChange={(e) => setInput(e.target.value)} />
@@ -47,4 +51,4 @@ const App = () => {
   )
 
 }
-export default App;
+export default withAuthenticator(App);

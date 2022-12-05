@@ -26,6 +26,9 @@
           "appId": "d1tbkvv6dcjhg3",
           "type": "manual"
         }
+      },
+      "auth": {
+        "reactamplified96edf85d": {}
       }
     }
   }
